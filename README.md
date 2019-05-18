@@ -1,3 +1,9 @@
+# jamstack.org 日本語化プロジェクト
+
++ Fork from https://github.com/jamstack/jamstack.org/commit/bbfbba56aac633a78991b075d8f7d8ad352c17c3
+
+---
+
 # JAMstack
 
 This is the small start of something. The JAMstack homepage with a few lines about the concepts and the philosophy.
