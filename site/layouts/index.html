@@ -10,17 +10,22 @@
       <div>{{ .Site.Data.definitions.explanation | markdownify }}</div>
       <div>
         <h1>FAQ</h1>
-        <a class="text-link scrolling-link" href="#what"><h4>What is the JAMstack?</h4></a>
-        <a class="text-link scrolling-link" href="#why"><h4>Why the JAMstack?</h4></a>
-        <a class="text-link scrolling-link" href="#how"><h4>How do I get started?</h4></a>
+        <!-- <a class="text-link scrolling-link" href="#what"><h4>What is the JAMstack?</h4></a> -->
+        <!-- <a class="text-link scrolling-link" href="#why"><h4>Why the JAMstack?</h4></a> -->
+        <!-- <a class="text-link scrolling-link" href="#how"><h4>How do I get started?</h4></a> -->
+        <a class="text-link scrolling-link" href="#what"><h4>JAMstack とは？</h4></a>
+        <a class="text-link scrolling-link" href="#why"><h4>なぜ JAMstack なのか？</h4></a>
+        <a class="text-link scrolling-link" href="#how"><h4>JAMstack の始め方は？</h4></a>
       </div>
     </div>
   </section>
   
   <section id="what" class="jam-breakdown">
     <div class="contained intro">
-      <h1>What is the JAMstack?</h1>
-      <p>Your project is built with the JAMstack if it meets three key criteria:</p>
+      <!-- <h1>What is the JAMstack?</h1> -->
+      <h1>JAMstack とは？</h1>
+      <!-- <p>Your project is built with the JAMstack if it meets three key criteria:</p> -->
+      <p>JAMstack で構築されたプロジェクトは、次の３つの条件を満たしています：</p>
     </div>
     <div class="letter-definition">
       <img class="letter" src="/img/j.svg"/>
@@ -40,8 +45,10 @@
   </section>
   
   <section class="jam-disqualifications contained">
-    <h1>When is your site <em>not</em> built with the JAMstack?</h1>
-    <p>Any project that relies on a tight coupling between client and server is not built with the JAMstack. This would include:</p>
+    <!-- <h1>When is your site <em>not</em> built with the JAMstack?</h1> -->
+    <h1>Web サイトが JAMstack で作られて<em>いない</em>のはどんなときか？</h1>
+    <!-- <p>Any project that relies on a tight coupling between client and server is not built with the JAMstack. This would include:</p> -->
+    <p>クライアントとサーバーの密な結びつきに依存しているプロジェクトは、JAMstack で構築されたとはいえません。たとえば次のようなプロジェクトです：</p>
     <div class="disqualifications">
       {{ range .Site.Data.definitions.disqualifications }}
         <h4 class="disqualification">{{ .disqualification | markdownify }}</h4>
@@ -50,7 +57,8 @@
   </section>
   
   <section id="why" class="advantages contained">
-    <h1>Why the JAMstack?</h1>
+    <!-- <h1>Why the JAMstack?</h1> -->
+    <h1>なぜ JAMstack なのか？</h1>
     <div class="advantages-grid">
       {{ range .Site.Data.definitions.advantages }}
         <div class="advantage">
@@ -62,8 +70,11 @@
   </section>
   
   <section id="how" class="bottom-cta contained">
-    <h1>How do I get started?</h1>
-    <a href="/best-practices"><h4>Learn About Best Practices →</h4></a>
-    <a href="/resources"><h4>View Resources →</h4></a>
+    <!-- <h1>How do I get started?</h1> -->
+    <h1>JAMstack の始め方は？</h1>
+    <!-- <a href="/best-practices"><h4>Learn About Best Practices →</h4></a> -->
+    <a href="/best-practices"><h4>ベストプラクティスについて学ぶ →</h4></a>
+    <!-- <a href="/resources"><h4>View Resources →</h4></a> -->
+    <a href="/resources"><h4>リソースを見る →</h4></a>
   </section>
 {{ end }}
