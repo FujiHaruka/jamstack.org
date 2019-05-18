@@ -2,27 +2,38 @@
 # jamstack: "**JAMstack**: noun &#92;’jam-stak’&#92; <span><br></span>Modern web development architecture based on client-side JavaScript, reusable APIs, and prebuilt Markup."
 jamstack: "**JAMstack**: 名詞 &#92;’jam-stak’&#92; <span><br></span>クライアントサイド JavaScript、再利用可能な API、ビルド済みの Markup に基づくモダンな Web 開発アーキテクチャ。"
 # explanation: When we talk about "The Stack," we no longer talk about operating systems, specific web servers, backend programming languages, or databases.<br><br>The JAMstack is not about specific technologies. It's a new way of building websites and apps that delivers better performance, higher security, lower cost of scaling, and a better developer experience.
-explanation: 「Stack」について話すことは、今ではもう OS や、Web サーバーや、バックエンドのプログラミング言語や、データベースについて話すことではありません。<br><br>JAMstack は特定の技術に関する概念でありません。Web サイトや Web アプリを構築する新しい方法です。それは、パフォーマンスの改善、セキュリティの向上、スケーリングのコスト削減、開発者体験の改善をもたらします。
+explanation: 「Stack」について話すことは、今ではもう OS や、Web サーバーや、バックエンドのプログラミング言語や、データベースについて話すことではありません。<br><br>JAMstack は特定の技術に関する概念でありません。Web サイトや Web アプリを構築する新しい方法です。それは、パフォーマンスの改善、セキュリティの向上、スケーリングのコスト削減、開発者体験の増進をもたらします。
 
 # javascript: "Any dynamic programming during the request/response cycle is handled by JavaScript, running entirely on the client. This could be any frontend framework, library, or even vanilla JavaScript."
-javascript: "リクエスト／レスポンスのサイクルを処理する動的なプログラミングは JavaScript が実行し、クライアント側で完結します。そうするためのフロントエンドのフレームワークやライブラリは何を使っても構いませんし、ただの JavaScript でも構いません。"
+javascript: "リクエスト／レスポンスのサイクルを処理する動的なプログラミングは JavaScript が実行し、クライアントサイドで完結します。そうするためのフロントエンドのフレームワークやライブラリは何を使っても構いませんし、ただの JavaScript でも構いません。"
 # apis: "All server-side processes or database actions are abstracted into reusable APIs, accessed over HTTPS with JavaScript. These can be custom-built or leverage third-party services."
-apis: "すべてのサーバー側のプロセスやデータベース操作は再利用可能な API に抽象化され、HTTPS を通じて JavaScript からアクセスします。これは自前で実装してもよいですが、サードパーティのサービスを活用しても構いません。"
+apis: "すべてのサーバーサイドのプロセスやデータベース操作は再利用可能な API に抽象化され、HTTPS を通じて JavaScript からアクセスします。これは自前で実装してもよいですが、サードパーティのサービスを活用しても構いません。"
 # markup: "Templated markup should be prebuilt at deploy time, usually using a site generator for content sites, or a build tool for web apps.<br><br>[Want to see some examples?](/examples)"
 markup: "テンプレートに埋め込まれる markup はデプロイ時にビルド済みになっているべきです。通常は、コンテンツを見せる Web サイトであればサイトジェネレーターを使い、Web アプリであればビルドツールを使います。<br><br>[例を見たいですか？](/examples)"
 
 disqualifications:
-  - disqualification: A site built with a server-side CMS like WordPress, Drupal, Joomla, or Squarespace.
-  - disqualification: A monolithic server-run web app that relies on Ruby, Node, or another backend language.
-  - disqualification: A single page app that uses isomorphic rendering to build views on the server at runtime.
+  # - disqualification: A site built with a server-side CMS like WordPress, Drupal, Joomla, or Squarespace.
+  - disqualification: WorkPress、Drupal、Joomla、Squarespace といったサーバーサイド CMS で構築された Web サイト。
+  # - disqualification: A monolithic server-run web app that relies on Ruby, Node, or another backend language.
+  - disqualification: Ruby、Node などのバックエンドの言語に依存してサーバー側で動作するモノリシックな Web アプリ。
+  # - disqualification: A single page app that uses isomorphic rendering to build views on the server at runtime.
+  - disqualification: シングルページアプリケーションであっても、サーバー側で実行時にビューを組み立てる isomorphic rendering を使用したもの。
 
 advantages:
-  - advantage: Better Performance
-    description: Why wait for pages to build on the fly when you can generate them at deploy time? When it comes to minimizing the time to first byte, nothing beats pre-built files served over a CDN.
-  - advantage: Higher Security
-    description: With server-side processes abstracted into microservice APIs, surface areas for attacks are reduced. You can also leverage the domain expertise of specialist third-party services.
-  - advantage: Cheaper, Easier Scaling
-    description: When your deployment amounts to a stack of files that can be served anywhere, scaling is a matter of serving those files in more places. CDNs are perfect for this, and often include scaling in all of their plans.
-  - advantage: Better Developer Experience
-    description: Loose coupling and separation of controls allow for more targeted development and debugging, and the expanding selection of CMS options for site generators remove the need to maintain a separate stack for content and marketing.
+  # - advantage: Better Performance
+    # description: Why wait for pages to build on the fly when you can generate them at deploy time? When it comes to minimizing the time to first byte, nothing beats pre-built files served over a CDN.
+  - advantage: パフォーマンスの改善
+    description: ページの生成がデプロイ時にできるとしたら、わざわざ実行時にビルドして待たせる必要があるでしょうか？ 最初のページビューまでの時間を最小化するには、ビルド済みファイルを CDN で配信するのに勝る方法はありません。
+  # - advantage: Higher Security
+    # description: With server-side processes abstracted into microservice APIs, surface areas for attacks are reduced. You can also leverage the domain expertise of specialist third-party services.
+  - advantage: セキュリティの向上
+    description: サーバーサイドのプロセスがマイクロサービスの API に抽象化されるため、攻撃者が外部からアクセスできる部分が減ります。セキュリティの専門技術をサードパーティのサービスに任せることもできます。
+  # - advantage: Cheaper, Easier Scaling
+    # description: When your deployment amounts to a stack of files that can be served anywhere, scaling is a matter of serving those files in more places. CDNs are perfect for this, and often include scaling in all of their plans.
+  - advantage: スケールのコスト削減、容易化
+    description: デプロイが大量のファイルを置いてどこかに配信するだけであれば、スケールで問題になるのはそのファイルをより多くの場所に送ることだけです。CDN がこの問題の完璧な答えです。一般的な CDN サービスにはすべてのプランにスケールが含まれています。
+  # - advantage: Better Developer Experience
+    # description: Loose coupling and separation of controls allow for more targeted development and debugging, and the expanding selection of CMS options for site generators remove the need to maintain a separate stack for content and marketing.
+  - advantage: 開発者体験の増進
+    description: クライアント／サーバー間の結合を弱め、分離することによって、開発とデバッグにより集中できるようになり、サイトジェネレーターに使える CMS の選択肢を広げることで、コンテンツとマーケティングの管理を分離する必要がなくなります。
 ---
