@@ -1,15 +1,27 @@
 ---
 bestpractices:
-  - title: Entire Project on a CDN
-    description: Because JAMstack projects don’t rely on server-side code, they can be distributed instead of living on a single server. Serving directly from a CDN unlocks speeds and performance that can't be beat. The more of your app you can push to the edge, the better the user experience.
-  - title: Everything Lives in Git
-    description: With a JAMstack project, anyone should be able to do a `git clone`, install any needed dependencies with a standard procedure (like `npm install`), and be ready to run the full project locally. No databases to clone, no complex installs. This reduces contributor friction, and also simplifies staging and testing workflows.
-  - title: Modern Build Tools
-    description: Take advantage of the world of modern build tools. It can be a jungle to get oriented in and it's a fast moving space, but you'll want to be able to use tomorrow's web standards today without waiting for tomorrow's browsers. And that currently means Babel, PostCSS, Webpack, and friends.
-  - title: Automated Builds
+  # - title: Entire Project on a CDN
+  - title: プロジェクトをまるごと CDN に置く
+    # description: Because JAMstack projects don’t rely on server-side code, they can be distributed instead of living on a single server. Serving directly from a CDN unlocks speeds and performance that can't be beat. The more of your app you can push to the edge, the better the user experience.
+    description: JAMstack なプロジェクトはサーバーサイドのコードに依存しないので、運用するサーバーは一つでなくてもよく、分散させることができます。CDN から直接配信すれば、速度もパフォーマンスも他の追従を許しません。アプリが CDN のエッジに push されるたびにユーザー体験が向上します。
+  # - title: Everything Lives in Git
+  - title: Git ですべてを管理する
+    # description: With a JAMstack project, anyone should be able to do a `git clone`, install any needed dependencies with a standard procedure (like `npm install`), and be ready to run the full project locally. No databases to clone, no complex installs. This reduces contributor friction, and also simplifies staging and testing workflows.
+    description: JAMstack なプロジェクトでは、誰でも `git clone` から始めて、(`npm install` のような) 標準的なやり方で必要な依存関係をインストールし、プロジェクト全体をローカルで実行できるようにすべきです。データベースの clone や、複雑なインストールは不要です。それによってコントリビューターが開発を始めるまでの敷居が下がるだけでなく、ステージングやテストのワークフローが単純になります。
+  # - title: Modern Build Tools
+  - title: モダンなビルドツール
+    # description: Take advantage of the world of modern build tools. It can be a jungle to get oriented in and it's a fast moving space, but you'll want to be able to use tomorrow's web standards today without waiting for tomorrow's browsers. And that currently means Babel, PostCSS, Webpack, and friends.
+    description: モダンなビルドツールの世界を活用しましょう。そこはジャングルのように迷いやすく、変化の激しい空間ですが、明日の Web 標準を明日のブラウザを待たずに今日使えるようになる利点は魅力的です。現在、それが意味するものは、Babel、PostCSS、Webpackとその仲間です。
+  # - title: Automated Builds
+  - title: ビルドの自動化
     description: Because JAMstack markup is prebuilt, content changes won’t go live until you run another build. Automating this process will save you lots of frustration. You can do this yourself with webhooks, or use a publishing platform that includes the service automatically.
-  - title: Atomic Deploys
-    description: As JAMstack projects grow really large, new changes might require re-deploying hundreds of files. Uploading these one at a time can cause inconsistent state while the process completes. You can avoid this with a system that lets you do "atomic deploys," where no changes go live until all changed files have been uploaded.
-  - title: Instant Cache Invalidation
-    description: When the build-to-deploy cycle becomes a regular occurrence, you need to know that when a deploy goes live, it really goes live. Eliminate any doubt by making sure your CDN can handle instant cache purges.
+    description: JAMstack の markup は事前にビルドするため、コンテンツの変更が反映されるにはビルドし直す必要があります。このプロセスを自動化すれば、ストレスを大幅に軽減できます。webhook を使って自分で自動化もできますし、ビルド自動化サービスが含まれている配信プラットフォームを使うこともできます。
+  # - title: Atomic Deploys
+  - title: atomic なデプロイ
+    # description: As JAMstack projects grow really large, new changes might require re-deploying hundreds of files. Uploading these one at a time can cause inconsistent state while the process completes. You can avoid this with a system that lets you do "atomic deploys," where no changes go live until all changed files have been uploaded.
+    description: JAMstack なプロジェクトが成長して非常に大きくなると、新たな変更によって何百ものファイルをデプロイしなおす必要がでてくるかもしれません。それらを同時にアップロードするプロセスが完了する前に、状態の不整合が発生する可能性があります。それを避けるために「atomic なデプロイ」ができるシステムを使いましょう。atomic なデプロイとは、すべてのファイルがアップロード完了するまで変更が反映されないということです。
+  # - title: Instant Cache Invalidation
+    title: キャッシュの即時無効化
+    # description: When the build-to-deploy cycle becomes a regular occurrence, you need to know that when a deploy goes live, it really goes live. Eliminate any doubt by making sure your CDN can handle instant cache purges.
+    description: ビルドしてデプロイする開発サイクルが定期的にまわるようになると、デプロイがきちんとできているか、本当にきちんとできているかを知る必要が生じます。疑いを完全に払拭するために、CDN のキャッシュを即時無効化できるよう設定しておきましょう。
 ---
