@@ -9,7 +9,7 @@ javascript: "リクエスト／レスポンスのサイクルを処理する動�
 # apis: "All server-side processes or database actions are abstracted into reusable APIs, accessed over HTTPS with JavaScript. These can be custom-built or leverage third-party services."
 apis: "すべてのサーバーサイドのプロセスやデータベース操作は再利用可能な API に抽象化され、HTTPS を通じて JavaScript からアクセスします。これは自前で実装してもよいですが、サードパーティのサービスを活用しても構いません。"
 # markup: "Templated markup should be prebuilt at deploy time, usually using a site generator for content sites, or a build tool for web apps.<br><br>[Want to see some examples?](/examples)"
-markup: "テンプレートに埋め込まれる markup はデプロイ時にビルド済みになっているべきです。通常は、コンテンツを見せる Web サイトであればサイトジェネレーターを使い、Web アプリであればビルドツールを使います。<br><br>[例を見たいですか？](/examples)"
+markup: "テンプレートに埋め込まれる markup はデプロイ時にビルド済みになっているべきです。通常は、コンテンツを見せる Web サイトであればサイトジェネレーターを使い、Web アプリであればビルドツールを使います。<br><br>[例を見たいですか？](https://jamstack.org/examples/)"
 
 disqualifications:
   # - disqualification: A site built with a server-side CMS like WordPress, Drupal, Joomla, or Squarespace.
